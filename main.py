@@ -242,9 +242,9 @@ def compute_attribute_weight():
     return weights
 
 def compute_average_attribute_weight():
-    """计算各属性的平均权重，通过循环100次模拟得到"""
+    """计算各属性的平均权重，通过循环一亿次模拟得到"""
     total_weights = {"crit": 0, "haste": 0, "spell_power": 0}
-    iterations = 5000
+    iterations = 100000000
 
     for _ in range(iterations):
         weights = compute_attribute_weight()
